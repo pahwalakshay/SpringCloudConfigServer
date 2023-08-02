@@ -1,6 +1,6 @@
 Step 1: bin\windows\zookeeper-server-start.bat config\zookeeper.properties
 Step 2: bin\windows\kafka-server-start.bat config\server.properties
-Step 3: bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic mytopic1
+Step 3: bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic orders
 Step 4: bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
-Step 5: bin\windows\kafka-console-producer.bat --bootstrap-server localhost:9092 --topic mytopic1
-Step 6: bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic mytopic1 --from-beginning
+Step 5: bin\windows\kafka-console-producer.bat --bootstrap-server localhost:9092 --topic orders
+Step 6: bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic orders --from-beginning

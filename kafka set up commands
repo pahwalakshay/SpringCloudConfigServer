@@ -4,3 +4,7 @@ Step 3: bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 
 Step 4: bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
 Step 5: bin\windows\kafka-console-producer.bat --bootstrap-server localhost:9092 --topic orders
 Step 6: bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic orders --from-beginning
+
+
+
+bin/kafka-topics.sh --zookeeper localhost:2181 --delete --topic orders
